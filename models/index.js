@@ -1,4 +1,7 @@
 'use strict';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '../src/App';
 
 var fs        = require('fs');
 var path      = require('path');
@@ -7,6 +10,11 @@ var basename  = path.basename(module.filename);
 var env       = process.env.NODE_ENV || 'development';
 var config    = require(__dirname + '/../config/config.json')[env];
 var db        = {};
+
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
+});
 
 if (config.use_env_variable) {
   var sequelize = new Sequelize(process.env[config.use_env_variable]);
