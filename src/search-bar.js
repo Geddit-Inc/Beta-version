@@ -8,13 +8,13 @@ export default class AutoCompleteExampleSimple extends Component {
   state = {
     dataSource: [],
   };
-
+//@Michelle, why are you dong value + value? Is is just a placeholder?
   handleUpdateInput = (value) => {
     this.setState({
       dataSource: [
         value,
-        // value + value,
-        // value + value + value,
+        value + value,
+        value + value + value,
       ],
     });
   };

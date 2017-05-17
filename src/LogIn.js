@@ -49,26 +49,23 @@ export default class LogIn extends Component  {
         <RaisedButton onClick={this.openModal} label="LogIn" secondary={true} style={style} />
         <Modal
           isOpen={this.state.modalIsOpen}
-          onAfterOpen={this.afterOpenModal}
+          // onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
           contentLabel="Example Modal"
-        >
+          >
 
-          <h2 ref={subtitle => this.subtitle = subtitle}>Please Log In</h2>
+          {/*Need to take in the values from these input*/}
+          <h2>Please Log In</h2>
           <div>Username</div>
           <form>
             <input />
           <div>Password</div>
             <input />
           <div></div>
-            <button>Log In</button>
-          <div></div>
-            <button>Forgot Password</button>
-          <div></div>
-            <button>Register</button>
+            <RaisedButton label="LogIn" secondary={true} style={style} />
+            <RaisedButton label="Sign Up" primary={true} style={style} />
           </form>
-          <button onClick={this.closeModal}>close</button>
         </Modal>
       </div>
     );
