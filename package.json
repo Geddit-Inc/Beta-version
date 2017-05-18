@@ -14,15 +14,16 @@
     "react-parallax": "^1.4.1",
     "react-scripts": "^0.9.5",
     "react-tap-event-plugin": "^2.0.1",
-    "sequelize": "^3.30.4"
+    "sequelize": "^3.30.4",
+    "serve": "5.1.5"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "react-scripts test --env=jsdom",
     "api": "node server/index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "serve": "serve -s build"
   },
   "repository": {
     "type": "git",
