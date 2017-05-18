@@ -10,7 +10,7 @@ SELECT * FROM Progresses;
 
 /* SAMPLE DATA FOR USERS TABLE */
 INSERT INTO Users (username, password, first_name, createdAt, updatedAt)
-VALUES 
+VALUES
 ("test2", "123", "tae1", current_timestamp, current_timestamp),
 ("test3", "123", "tae3", current_timestamp, current_timestamp),
 ("todoer", "123", "Abtin", current_timestamp, current_timestamp),
@@ -30,7 +30,7 @@ VALUES ("Best JS course out there!", "This is the review text", current_timestam
 
 /* SAMPLE DATA FOR PROGRESSES TABLE */
 INSERT INTO Progresses (current_progress, completed, createdAt, updatedAt, CourseId, UserId)
-VALUES 
+VALUES
 (10, FALSE, current_timestamp, current_timestamp, 1, 1),
 (30, TRUE, current_timestamp, current_timestamp, 1, 4),
 (25, FALSE, current_timestamp, current_timestamp, 1, 5);
