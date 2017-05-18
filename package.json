@@ -20,10 +20,10 @@
   "devDependencies": {},
   "scripts": {
     "test": "react-scripts test --env=jsdom",
-    "api": "node server/index.js",
+    "server": "node server/index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "serve": "serve -s build"
+    "start:prod": "serve -s build"
   },
   "repository": {
     "type": "git",
