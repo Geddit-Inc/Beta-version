@@ -8,7 +8,7 @@ import HeroPic from './img/landingpage.jpeg';
 const LandingPage = React.createClass({
   render() {
       return (
-        <img id="heropic" src={HeroPic} />
+        <img id="heropic" src={HeroPic} alt="" />
       )
     }
   });
