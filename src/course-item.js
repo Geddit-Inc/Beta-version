@@ -16,7 +16,7 @@ const CardExampleWithAvatar = () => (
         <CardMedia
           overlay={<CardTitle title="ECMAScript 6 tutorial" subtitle="by Codeschool" />}
         >
-          <img src={CoursePic} />
+          <img src={CoursePic} alt="" />
         </CardMedia>
         <CardTitle title="Learning ES6 in 6 hours" subtitle="A course offered by Codeschool" />
         <CardText>

@@ -1,0 +1,7 @@
+db:
+  image: mysql:8
+  environment:
+    - MYSQL_ROOT_PASSWORD=ASDFAAAA
+    - MYSQL_DATABASE=geddit_test
+  ports:
+    - 3306:3306
