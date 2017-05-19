@@ -88,7 +88,6 @@ module.exports = function(app) {
     db.User.create({
       username: req.body.username,
       password: req.body.password,
-      first_name: req.body.first_name
     })
     .then(function(data) {
       res.json(data);
